@@ -11,3 +11,9 @@ function buyBuyBuy(float $btcPrice, float $walletBalance, float $exchangeRate) :
     $newBalance = $walletBalance - $actualBtcPrice;
     return($newBalance);
 }
+
+$currentExchangeRate = 6.696;
+$actualRetailPrice = 2.29;
+$walletBalance = 118.43;
+
+echo buyBuyBuy($actualRetailPrice, $walletBalance, $currentExchangeRate) . PHP_EOL;
